@@ -232,13 +232,14 @@ function App() {
 
   return (
     <>
+      <div className="noise"></div>
       <OnboardingFlow onConnectWallet={connect} />
       <FeedbackWidget />
       
       {/* Premium Background - Aurora + Grain */}
       <div className="aurora-bg">
-        <div className="aurora-circle-1" style={{ background: billMode === 'private' ? 'radial-gradient(circle, rgba(139,92,246,0.15) 0%, rgba(139,92,246,0) 70%)' : undefined }}></div>
-        <div className="aurora-circle-2" style={{ background: billMode === 'private' ? 'radial-gradient(circle, rgba(16,185,129,0.1) 0%, rgba(16,185,129,0) 70%)' : undefined }}></div>
+        <div className="aurora-circle-1" style={{ background: billMode === 'private' ? 'radial-gradient(circle, rgba(201,162,75,0.05) 0%, rgba(201,162,75,0) 70%)' : undefined }}></div>
+        <div className="aurora-circle-2" style={{ background: billMode === 'private' ? 'radial-gradient(circle, rgba(79,138,118,0.05) 0%, rgba(79,138,118,0) 70%)' : undefined }}></div>
         <div className="aurora-grain"></div>
       </div>
 
@@ -251,33 +252,21 @@ function App() {
 
       <WalletWarning isInstalled={isInstalled} />
 
-      <main className="container" style={{ flexGrow: 1, padding: '2rem 1.5rem' }}>
-        <div className="hero">
-          <h1>Split Bills, Privately.</h1>
-          <p>
-            Split expenses and settle up on the Stellar Testnet without linking repeated payments, backed by a Soroban registry with one-time stealth addresses.
+      <main className="container" style={{ flexGrow: 1, padding: '0 40px' }}>
+        <section className="hero">
+          <div className="eyebrow">Sealed on Soroban</div>
+          <h1>Split bills, <span className="accent">privately.</span></h1>
+          <p className="sub">
+            Settle expenses on the Stellar Testnet without linking repeated payments — backed by a Soroban registry using one-time stealth addresses and hashed commitments.
           </p>
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '1rem',
-            marginTop: '1.5rem',
-            background: 'rgba(255, 255, 255, 0.03)',
-            border: '1px solid rgba(255, 255, 255, 0.08)',
-            padding: '0.75rem 1.5rem',
-            borderRadius: '12px',
-            maxWidth: '600px',
-            marginLeft: 'auto',
-            marginRight: 'auto'
-          }}>
-            <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Share AetherSplit:</span>
+          <div className="share-row">
+            <span>Share</span>
             <a
               href="https://twitter.com/intent/tweet?text=I'm using AetherSplit to settle recurring shared bills privately on Stellar! No more exposing my wallet transaction history on-chain. Try it here: https://github.com/rishi3243kumar/VeilSplits"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-secondary"
-              style={{ padding: '0.35rem 0.75rem', fontSize: '0.85rem', background: 'rgba(29, 161, 242, 0.1)', color: '#1da1f2', borderColor: 'rgba(29, 161, 242, 0.2)', textDecoration: 'none' }}
+              className="share-btn"
+              style={{ textDecoration: 'none' }}
             >
               Twitter
             </a>
@@ -285,13 +274,13 @@ function App() {
               href="https://api.whatsapp.com/send?text=Check out AetherSplit - Privacy-first bill splitting protocol on Stellar! Try it here: https://github.com/rishi3243kumar/VeilSplits"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-secondary"
-              style={{ padding: '0.35rem 0.75rem', fontSize: '0.85rem', background: 'rgba(37, 211, 102, 0.1)', color: '#25d366', borderColor: 'rgba(37, 211, 102, 0.2)', textDecoration: 'none' }}
+              className="share-btn"
+              style={{ textDecoration: 'none' }}
             >
               WhatsApp
             </a>
           </div>
-        </div>
+        </section>
 
         {showProgress ? (
           <div className="glowing-wrapper">
@@ -308,22 +297,20 @@ function App() {
           </div>
         ) : (
           <>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
-              <div style={{ display: 'flex', background: 'rgba(255,255,255,0.05)', padding: '0.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                <button 
-                  className={`btn ${billMode === 'private' ? 'btn-primary' : 'btn-secondary'}`}
-                  style={{ borderRadius: '8px', border: 'none', padding: '0.5rem 1.5rem', background: billMode === 'private' ? 'var(--primary)' : 'transparent' }}
+            <div className="tabs">
+              <div className="tab-group">
+                <div 
+                  className={`tab ${billMode === 'private' ? 'active' : ''}`}
                   onClick={() => setBillMode('private')}
                 >
                   AetherSplit (Private)
-                </button>
-                <button 
-                  className={`btn ${billMode === 'standard' ? 'btn-primary' : 'btn-secondary'}`}
-                  style={{ borderRadius: '8px', border: 'none', padding: '0.5rem 1.5rem', background: billMode === 'standard' ? 'rgba(255,255,255,0.1)' : 'transparent' }}
+                </div>
+                <div 
+                  className={`tab ${billMode === 'standard' ? 'active' : ''}`}
                   onClick={() => setBillMode('standard')}
                 >
                   Standard Split
-                </button>
+                </div>
               </div>
             </div>
 

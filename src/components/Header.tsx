@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Wallet, Coins, Check, Copy, Sun, Moon } from 'lucide-react';
 
 interface HeaderProps {
   address: string | null;
@@ -45,110 +44,68 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   return (
-    <header>
-      <div className="container header-inner">
-        <div className="flex items-center gap-2">
-          <div style={{
-            width: '2rem',
-            height: '2rem',
-            borderRadius: '0.5rem',
-            background: 'linear-gradient(135deg, #9d4edd, #3f37c9)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-            <Coins size={18} style={{ color: 'white' }} />
-          </div>
-          <span className="logo" style={{ background: 'linear-gradient(135deg, #9d4edd 0%, #3f37c9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: 800 }}>
-            AetherSplit
-          </span>
-        </div>
+    <header style={{ padding: '18px 40px', borderBottom: '1px solid var(--line-soft)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div className="brand">
+        <div className="seal-mark">AS</div>
+        <div className="brand-name">Aether<em>Split</em></div>
+      </div>
 
-        <div className="flex items-center gap-3">
-          <span className="pulse-badge" style={{ padding: '0.35rem 0.75rem', fontWeight: 600, background: 'rgba(245, 158, 11, 0.1)', color: '#fbbf24', border: '1px solid rgba(245, 158, 11, 0.2)' }}>
-            Stellar Testnet
-          </span>
-
+      {address ? (
+        <div className="nav-right">
+          <span className="pill pill-testnet">Stellar Testnet</span>
           <button
             onClick={() => setTheme(prev => prev === 'light' ? 'dark' : 'light')}
-            className="btn btn-secondary"
-            style={{
-              padding: '0.5rem',
-              height: '2.25rem',
-              width: '2.25rem',
-              background: 'rgba(255,255,255,0.04)',
-              borderColor: 'rgba(255,255,255,0.06)',
-              borderRadius: '0.5rem',
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              cursor: 'pointer'
-            }}
+            className="icon-btn"
             title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+            style={{ border: '1px solid var(--line)', background: 'transparent', fontSize: '14px' }}
           >
-            {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
+            {theme === 'light' ? '🌙' : '☀️'}
           </button>
-
-          {address ? (
-            <div className="flex items-center gap-2">
-              <button 
-                onClick={handleCopy} 
-                className="address-badge tooltip"
-                style={{ 
-                  cursor: 'pointer', 
-                  outline: 'none',
-                  background: 'rgba(139, 92, 246, 0.1)',
-                  color: '#c084fc',
-                  borderColor: 'rgba(139, 92, 246, 0.2)'
-                }}
-                title="Copy Address"
-              >
-                {copied ? <Check size={14} style={{ color: '#10b981' }} /> : <Copy size={14} />}
-                <span>{shortenAddress(address)}</span>
-                <span className="tooltiptext">{copied ? 'Copied!' : 'Copy'}</span>
-              </button>
-              
-              <button
-                onClick={disconnect}
-                className="btn btn-secondary"
-                style={{ 
-                  padding: '0.5rem', 
-                  height: '2.25rem', 
-                  width: '2.25rem',
-                  background: 'rgba(255,255,255,0.04)',
-                  borderColor: 'rgba(255,255,255,0.06)',
-                  borderRadius: '0.5rem',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}
-                title="Disconnect Wallet"
-              >
-                <svg style={{ width: '1rem', height: '1rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" /></svg>
-              </button>
-            </div>
-          ) : (
-            <button
-              onClick={connect}
-              disabled={isConnecting}
-              className="btn btn-primary"
-              style={{ padding: '0.5rem 1.25rem', height: '2.25rem' }}
-            >
-              {isConnecting ? (
-                <>
-                  <div className="spinner" style={{ width: '1rem', height: '1rem', borderWidth: '2px' }}></div>
-                  <span>Connecting...</span>
-                </>
-              ) : (
-                <>
-                  <Wallet size={16} />
-                  <span>Connect Wallet</span>
-                </>
-              )}
-            </button>
-          )}
+          <button
+            onClick={handleCopy}
+            className="pill pill-addr"
+            style={{ border: '1px solid var(--line)', cursor: 'pointer', outline: 'none' }}
+            title={copied ? "Copied!" : "Copy Address"}
+          >
+            {copied ? "✓ Copied" : shortenAddress(address)}
+          </button>
+          <button
+            onClick={disconnect}
+            className="icon-btn"
+            title="Sign out"
+            style={{ border: '1px solid var(--line)', background: 'transparent', fontSize: '15px' }}
+          >
+            ⏻
+          </button>
         </div>
-      </div>
+      ) : (
+        <div className="nav-right">
+          <span className="pill pill-testnet">Stellar Testnet</span>
+          <button
+            onClick={() => setTheme(prev => prev === 'light' ? 'dark' : 'light')}
+            className="icon-btn"
+            title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+            style={{ border: '1px solid var(--line)', background: 'transparent', fontSize: '14px' }}
+          >
+            {theme === 'light' ? '🌙' : '☀️'}
+          </button>
+          <button
+            onClick={connect}
+            disabled={isConnecting}
+            className="pill"
+            style={{
+              background: 'linear-gradient(135deg, var(--gold-bright), var(--gold) 65%, var(--seal))',
+              color: '#1a1004',
+              fontWeight: 600,
+              cursor: 'pointer',
+              border: 'none',
+              padding: '6px 16px'
+            }}
+          >
+            {isConnecting ? 'Connecting...' : 'Connect Wallet'}
+          </button>
+        </div>
+      )}
     </header>
   );
 };

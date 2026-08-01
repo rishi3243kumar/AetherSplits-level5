@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { getRecentEvents } from '../lib/stellar';
 import type { SorobanEvent } from '../lib/stellar';
-import { Activity, RefreshCw, CheckCircle2, FileText, Ban, Sparkles, UserPlus } from 'lucide-react';
+import { CheckCircle2, FileText, Ban, Sparkles, UserPlus } from 'lucide-react';
 
 interface ActivityFeedProps {
   connectedAddress?: string | null;
@@ -203,130 +203,97 @@ export const ActivityFeed: React.FC<ActivityFeedProps> = ({ connectedAddress }) 
   const displayedEvents = activeTab === 'all' ? events : myEvents;
 
   return (
-    <div className="card w-full" style={{ marginTop: '2rem' }}>
-      <div className="feed-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.5rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <div className="feed-title" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 700, fontSize: '1.1rem' }}>
-            <Activity size={20} className="text-purple-400" />
-            Activity Log
-          </div>
-          {connectedAddress && (
-            <div style={{ display: 'flex', background: 'rgba(255,255,255,0.03)', padding: '2px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
-              <button
-                type="button"
-                onClick={() => setActiveTab('all')}
-                style={{
-                  padding: '0.25rem 0.75rem',
-                  fontSize: '0.8rem',
-                  borderRadius: '6px',
-                  border: 'none',
-                  background: activeTab === 'all' ? 'var(--primary)' : 'transparent',
-                  color: activeTab === 'all' ? 'white' : 'var(--text-secondary)',
-                  cursor: 'pointer',
-                  fontWeight: activeTab === 'all' ? 600 : 400
-                }}
-              >
-                All Activity
-              </button>
-              <button
-                type="button"
+    <div className="panel activity">
+      <div className="panel-head">
+        <div className="panel-title">
+          <span className="dot"></span>Activity Log
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <div className="log-tabs">
+            <div
+              className={`log-tab ${activeTab === 'all' ? 'active' : ''}`}
+              onClick={() => setActiveTab('all')}
+            >
+              All Activity
+            </div>
+            {connectedAddress && (
+              <div
+                className={`log-tab ${activeTab === 'mine' ? 'active' : ''}`}
                 onClick={() => setActiveTab('mine')}
-                style={{
-                  padding: '0.25rem 0.75rem',
-                  fontSize: '0.8rem',
-                  borderRadius: '6px',
-                  border: 'none',
-                  background: activeTab === 'mine' ? 'var(--primary)' : 'transparent',
-                  color: activeTab === 'mine' ? 'white' : 'var(--text-secondary)',
-                  cursor: 'pointer',
-                  fontWeight: activeTab === 'mine' ? 600 : 400
-                }}
               >
                 My Bills (Last 5)
-              </button>
-            </div>
+              </div>
+            )}
+          </div>
+          {loading ? (
+            <span className="live" style={{ color: 'var(--muted)' }}>Connecting...</span>
+          ) : error ? (
+            <span className="live" style={{ color: 'var(--danger)', cursor: 'pointer' }} onClick={fetchInitialEvents}>Disconnected (Retry)</span>
+          ) : (
+            <span className="live">Live Stream Connected</span>
           )}
         </div>
-        
-        {loading ? (
-          <div className="feed-status connecting">
-            <span className="spinner" style={{ width: '0.75rem', height: '0.75rem', borderWidth: '2px' }}></span>
-            Connecting Event Stream...
-          </div>
-        ) : error ? (
-          <button onClick={fetchInitialEvents} className="feed-status" style={{ background: 'rgba(239,68,68,0.1)', color: '#f87171', border: '1px solid rgba(239,68,68,0.2)', cursor: 'pointer' }}>
-            <RefreshCw size={12} />
-            Stream Disconnected (Retry)
-          </button>
-        ) : (
-          <div className="feed-status">
-            <span className="pulse-badge status-success" style={{ padding: '2px', marginRight: '4px' }}></span>
-            Live Stream Connected
-          </div>
-        )}
       </div>
 
       {loading ? (
-        <div className="activity-feed">
-          {[1, 2, 3].map((n) => (
-            <div key={n} className="activity-item skeleton" style={{ opacity: 0.6, border: '1px solid rgba(255,255,255,0.03)' }}>
-              <div className="activity-icon skeleton" style={{ width: '1.75rem', height: '1.75rem', borderRadius: '4px' }}></div>
-              <div className="activity-details" style={{ gap: '0.5rem' }}>
-                <div className="skeleton" style={{ height: '12px', width: '60%', borderRadius: '4px' }}></div>
-                <div className="skeleton" style={{ height: '10px', width: '40%', borderRadius: '4px' }}></div>
+        <div className="panel-body">
+          <div className="activity-feed">
+            {[1, 2, 3].map((n) => (
+              <div key={n} className="activity-item skeleton" style={{ opacity: 0.6, border: '1px solid var(--line-soft)', padding: '12px', marginBottom: '8px', display: 'flex', gap: '12px' }}>
+                <div className="activity-icon skeleton" style={{ width: '1.75rem', height: '1.75rem', borderRadius: '2px' }}></div>
+                <div className="activity-details" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', flexGrow: 1 }}>
+                  <div className="skeleton" style={{ height: '12px', width: '60%', borderRadius: '2px' }}></div>
+                  <div className="skeleton" style={{ height: '10px', width: '40%', borderRadius: '2px' }}></div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       ) : error ? (
-        <div className="alert alert-error" style={{ margin: 0 }}>
-          <p>{error}</p>
+        <div className="panel-body">
+          <div className="alert alert-error" style={{ margin: 0 }}>
+            <p>{error}</p>
+          </div>
         </div>
       ) : displayedEvents.length === 0 ? (
-        activeTab === 'mine' ? (
-          <div style={{ textAlign: 'center', padding: '3rem 1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px dashed rgba(255,255,255,0.08)' }}>
-            <FileText size={40} style={{ color: 'var(--text-muted)', marginBottom: '1rem', opacity: 0.5 }} />
-            <h4 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-main)', marginBottom: '0.25rem' }}>No bills created yet</h4>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', maxWidth: '350px', margin: '0 auto' }}>
-              Settle recurring rent or splits with roommates by creating your first private bill above!
-            </p>
-          </div>
-        ) : (
-          <div className="text-center text-muted" style={{ padding: '2rem 0' }}>
-            No recent on-chain events found. Create a split bill to see activity.
-          </div>
-        )
+        <div className="log-empty">
+          <div className="ledger-line"></div>
+          {activeTab === 'mine' ? "No bills created yet. Create a private bill to open the ledger." : "No sealed entries yet. Create a bill to open the ledger."}
+        </div>
       ) : (
-        <div className="activity-feed" style={{ maxHeight: '350px', overflowY: 'auto', paddingRight: '0.5rem' }}>
-          {displayedEvents.map((ev) => (
-            <div key={ev.id} className={`activity-item type-${ev.type}`}>
-              <div className="activity-icon">
-                {getEventIcon(ev.type)}
-              </div>
-              <div className="activity-details">
-                <div className="activity-header">
-                  <span style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.9)' }}>
-                    {formatEventMessage(ev)}
-                  </span>
-                  {ev.txHash && !ev.id.startsWith('sim-') ? (
-                    <a
-                      href={`https://stellar.expert/explorer/testnet/tx/${ev.txHash}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link-explorer text-sm"
-                    >
-                      View Tx
-                    </a>
-                  ) : (
-                    <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>Simulated</span>
-                  )}
+        <div className="panel-body">
+          <div className="activity-feed" style={{ maxHeight: '350px', overflowY: 'auto', paddingRight: '0.5rem' }}>
+            {displayedEvents.map((ev) => (
+              <div key={ev.id} className={`activity-item type-${ev.type}`} style={{ display: 'flex', gap: '12px', padding: '12px 0', borderBottom: '1px solid var(--line-soft)' }}>
+                <div className="activity-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  {getEventIcon(ev.type)}
                 </div>
-                <div className="activity-meta">
-                  <span className="activity-time">Event ID: {ev.id.substring(0, 8)}...</span>
+                <div className="activity-details" style={{ flexGrow: 1 }}>
+                  <div className="activity-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ fontSize: '13.5px', color: 'var(--paper)' }}>
+                      {formatEventMessage(ev)}
+                    </span>
+                    {ev.txHash && !ev.id.startsWith('sim-') ? (
+                      <a
+                        href={`https://stellar.expert/explorer/testnet/tx/${ev.txHash}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-explorer text-sm"
+                        style={{ color: 'var(--gold)', fontSize: '12px' }}
+                      >
+                        View Tx
+                      </a>
+                    ) : (
+                      <span style={{ fontSize: '11px', color: 'var(--muted)', fontStyle: 'italic' }}>Simulated</span>
+                    )}
+                  </div>
+                  <div className="activity-meta" style={{ marginTop: '4px' }}>
+                    <span className="activity-time" style={{ fontSize: '11px', color: 'var(--muted)' }}>Event ID: {ev.id.substring(0, 8)}...</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
     </div>
