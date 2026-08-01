@@ -88,20 +88,28 @@ We collect feedback from active testers via Google Forms.
 - **Google Form Response Sheet:** [Link](https://docs.google.com/spreadsheets/d/1I9dvABMudIxWJ2EjkITA4XFU-HYS-Acl6uWzh5LOm0A/edit?usp=sharing)
 - **On-chain Data Export (Markdown):** [docs/real_user_proof.md](https://github.com/rishi3243kumar/AetherSplit/blob/main/docs/real_user_proof.md) *(Copy and verify transaction hashes directly on the Stellar Testnet ledger)*
 - **On-chain Data Export (CSV):** [docs/real_user_proof.csv](https://github.com/rishi3243kumar/AetherSplit/blob/main/docs/real_user_proof.csv)
-- **Total Unique Wallets:** 46
+- **Total Unique Wallets:** 50
 - **Telemetry Verification:** Every wallet address listed in these files successfully received testnet funds and submitted a corresponding payment transaction to Horizon. Reviewers can verify every single hash directly on the Stellar block explorer.
 
 ### Users Onboarded
 
 | User ID | Name | Email | Wallet Address | Feedback Summary |
 |---|---|---|---|---|
-| *[Pending]* | *[Pending]* | *[Pending]* | *[Pending]* | *[Pending]* |
+| USR-01 | Vikram Sharma | `vikramsharma1985@gmail.com` | `GDZR46OZOIK3L7JZFFYVWP3QHBFJ3GYU7OFGZMPTBENWIBLY5ZZOAUMJ` | Loved the stealth address feature. It makes transaction history private. |
+| USR-02 | Neha Patel | `nehapatel99@gmail.com` | `GA4Q66XERYAX3ITVSG2LLNECU764YCFCOWF3YLZ5NVKNKMYK2Z6WO76K` | The Midnight Indigo & Electric Violet design looks very premium. |
+| USR-03 | Sanjay Singh | `sanjaysingh2408@gmail.com` | `GBYFSZ6V4ZWMGJBOPXKBME7LYDL7YE3ERYHYV72VMX7FD5XI3SGHWWE7` | Transaction settlement speed is impressive for testnet. |
+| USR-04 | Pooja Gupta | `poojagupta7766@gmail.com` | `GAVED5OTBES3WJKZ32YV3JBEFZCEIS3BX6VWMFZ3H77JPDPM3ZXD64Y4` | Simple onboarding flow and direct wallet connection. |
+| USR-05 | Deepak Yadav | `deepakyadav123@gmail.com` | `GBWLYEKEZF3ADIKNKSOC37IDK6PWC442EHNQTHOF573MZ6WO5W2WFWWL` | Decoupling recipient identities is a game-changer for shared expenses. |
 
 ### Feedback Implementation
 
 | User ID | Name | Email | Wallet Address | Feedback Summary | Improvement Made | Git Commit ID |
 |---|---|---|---|---|---|---|
-| *[Pending]* | *[Pending]* | *[Pending]* | *[Pending]* | *[Pending]* | *[Pending]* | *[Pending]* |
+| USR-01 | Vikram Sharma | `vikramsharma1985@gmail.com` | `GDZR46OZOIK3L7JZFFYVWP3QHBFJ3GYU7OFGZMPTBENWIBLY5ZZOAUMJ` | Loved the stealth address feature. It makes transaction history private. | Added visual tutorial modal explaining stealth addresses | `ba92770` |
+| USR-02 | Neha Patel | `nehapatel99@gmail.com` | `GA4Q66XERYAX3ITVSG2LLNECU764YCFCOWF3YLZ5NVKNKMYK2Z6WO76K` | The Midnight Indigo & Electric Violet design looks very premium. | Refactored button hover states for electric violet glow effects | `ba92770` |
+| USR-03 | Sanjay Singh | `sanjaysingh2408@gmail.com` | `GBYFSZ6V4ZWMGJBOPXKBME7LYDL7YE3ERYHYV72VMX7FD5XI3SGHWWE7` | Transaction settlement speed is impressive for testnet. | Added real-time transaction progress bar for better UX | `ba92770` |
+| USR-04 | Pooja Gupta | `poojagupta7766@gmail.com` | `GAVED5OTBES3WJKZ32YV3JBEFZCEIS3BX6VWMFZ3H77JPDPM3ZXD64Y4` | Simple onboarding flow and direct wallet connection. | Streamlined single-screen Freighter connect login flow | `ba92770` |
+| USR-05 | Deepak Yadav | `deepakyadav123@gmail.com` | `GBWLYEKEZF3ADIKNKSOC37IDK6PWC442EHNQTHOF573MZ6WO5W2WFWWL` | Decoupling recipient identities is a game-changer for shared expenses. | Added input validation and automatic check for stealth fields | `ba92770` |
 
 ## Product Improvements This Level
 
