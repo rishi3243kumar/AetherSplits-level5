@@ -127,10 +127,9 @@ We scale our user base by distributing the application across the Stellar Develo
 ## Screenshots
 
 *[Placeholder instructions: Upload fresh screenshots of AetherSplit's Midnight Indigo & Electric Violet UI here]*
-- **Product UI:** *[Upload path: image.png]*
-- **Mobile Responsive View:** *[Upload path: image-1.png]*
-- **Analytics Dashboard:** *[Upload path: image-2.png]*
-- **Stellar Expert Transaction Proof:** *[Upload path: image-4.png]*
+- **Product UI:** ![alt text](image-3.png)
+- **Mobile Responsive View:** ![alt text](image-1.png)
+- **CI/CD WORKFLOW:** ![alt text](image.png)
 
 ## Next Phase Roadmap
 
