@@ -105,3 +105,4 @@ Update log for checkpoint 104
 Update log for checkpoint 105
 Update log for checkpoint 106
 Update log for checkpoint 107
+Update log for checkpoint 108
