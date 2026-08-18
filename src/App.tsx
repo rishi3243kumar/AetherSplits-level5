@@ -262,7 +262,7 @@ function App() {
           <div className="share-row">
             <span>Share</span>
             <a
-              href="https://twitter.com/intent/tweet?text=I'm using AetherSplit to settle recurring shared bills privately on Stellar! No more exposing my wallet transaction history on-chain. Try it here: https://github.com/rishi3243kumar/VeilSplits"
+              href="https://twitter.com/intent/tweet?text=I'm using AetherSplit to settle recurring shared bills privately on Stellar! No more exposing my wallet transaction history on-chain. Try it here: https://github.com/rishi3243kumar/AetherSplits-level5"
               target="_blank"
               rel="noopener noreferrer"
               className="share-btn"
@@ -271,7 +271,7 @@ function App() {
               Twitter
             </a>
             <a
-              href="https://api.whatsapp.com/send?text=Check out AetherSplit - Privacy-first bill splitting protocol on Stellar! Try it here: https://github.com/rishi3243kumar/VeilSplits"
+              href="https://api.whatsapp.com/send?text=Check out AetherSplit - Privacy-first bill splitting protocol on Stellar! Try it here: https://github.com/rishi3243kumar/AetherSplits-level5"
               target="_blank"
               rel="noopener noreferrer"
               className="share-btn"

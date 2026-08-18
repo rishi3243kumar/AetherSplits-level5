@@ -1,6 +1,6 @@
-﻿# Troubleshooting Guide
+# Troubleshooting Guide
 
-Common issues and solutions when working with VeilSplit:
+Common issues and solutions when working with AetherSplit:
 
 ## 1. Freighter Wallet Connection Fails
 - Ensure the Freighter extension is active and unlocked in your browser.

@@ -1,10 +1,10 @@
-# VeilSplit Pitch Deck Content
-This document contains the complete content, slide layouts, and speaker notes for the **VeilSplit** pitch deck. You can copy and paste this directly into Google Slides or PowerPoint.
+# AetherSplit Pitch Deck Content
+This document contains the complete content, slide layouts, and speaker notes for the **AetherSplit** pitch deck. You can copy and paste this directly into Google Slides or PowerPoint.
 
 ---
 
 ## Slide 1: Title Slide
-* **Slide Title:** VeilSplit
+* **Slide Title:** AetherSplit
 * **Subtitle:** Privacy-First Bill Splitting on Stellar
 * **Bullet Content:**
   * Built by `[YOUR NAME]`
@@ -12,7 +12,7 @@ This document contains the complete content, slide layouts, and speaker notes fo
   * Smart Contract Registry + Stealth Payouts
   * Live Demo: [aether-splits-level5-9gcx.vercel.app](https://aether-splits-level5-9gcx.vercel.app/)
 * **Speaker Notes:**
-  > "Hello everyone, my name is `[YOUR NAME]`, and today I am excited to present VeilSplit—a privacy-preserving, recurring bill settlement protocol built on Stellar. With VeilSplit, we are resolving a fundamental issue of public blockchain transparency for everyday social finance, making group expense splitting private, secure, and user-friendly on the Soroban network."
+  > "Hello everyone, my name is `[YOUR NAME]`, and today I am excited to present AetherSplit—a privacy-preserving, recurring bill settlement protocol built on Stellar. With AetherSplit, we are resolving a fundamental issue of public blockchain transparency for everyday social finance, making group expense splitting private, secure, and user-friendly on the Soroban network."
 
 ---
 
@@ -36,7 +36,7 @@ This document contains the complete content, slide layouts, and speaker notes fo
   * **Linkability Broken:** Observers cannot link a participant's main account to their claim transaction.
   * **Non-Custodial & Automated:** Built directly on Soroban, securing funds without intermediaries.
 * **Speaker Notes:**
-  > "VeilSplit solves this privacy gap through two core mechanisms. First, we store bill commitments on-chain as cryptographic hashes instead of plaintext details. Second, we generate randomized, one-time stealth claim addresses for each participant. This decouples payments from main public keys, allowing users to settle bills without exposing their transaction history or financial relationships."
+  > "AetherSplit solves this privacy gap through two core mechanisms. First, we store bill commitments on-chain as cryptographic hashes instead of plaintext details. Second, we generate randomized, one-time stealth claim addresses for each participant. This decouples payments from main public keys, allowing users to settle bills without exposing their transaction history or financial relationships."
 
 ---
 
@@ -48,7 +48,7 @@ This document contains the complete content, slide layouts, and speaker notes fo
   * **DAOs & Communities:** Paying contributors and splitting payouts without disclosing identities.
   * **Privacy Premium:** Tapping into a growing demand for data privacy in decentralized social finance.
 * **Speaker Notes:**
-  > "Our target market spans peer-to-peer social circles like roommates, freelancer collectives who split shared operations costs, and DAOs paying contributors. Financial privacy is a fundamental human right. As Web3 goes mainstream, users expect the same transaction confidentiality they receive from traditional banking apps, making VeilSplit a crucial piece of financial infrastructure."
+  > "Our target market spans peer-to-peer social circles like roommates, freelancer collectives who split shared operations costs, and DAOs paying contributors. Financial privacy is a fundamental human right. As Web3 goes mainstream, users expect the same transaction confidentiality they receive from traditional banking apps, making AetherSplit a crucial piece of financial infrastructure."
 
 ---
 
@@ -61,19 +61,19 @@ This document contains the complete content, slide layouts, and speaker notes fo
   * *[PLACEHOLDER: Insert Screenshot of Dashboard]*
   * *[PLACEHOLDER: Insert Screenshot of Stealth Payout Screen]*
 * **Speaker Notes:**
-  > "We built VeilSplit with a premium, sleek dark-themed frontend using vanilla CSS to captivate users. The product features an onboarded user flow under 2 minutes, a quick split calculator, a local address book, and deep payment links. This simplifies claiming and paying bills down to a single click, completely hiding the complex cryptographic heavy lifting from the end user."
+  > "We built AetherSplit with a premium, sleek dark-themed frontend using vanilla CSS to captivate users. The product features an onboarded user flow under 2 minutes, a quick split calculator, a local address book, and deep payment links. This simplifies claiming and paying bills down to a single click, completely hiding the complex cryptographic heavy lifting from the end user."
 
 ---
 
 ## Slide 6: Architecture Overview
-* **Slide Title:** How VeilSplit Works Under the Hood
+* **Slide Title:** How AetherSplit Works Under the Hood
 * **Bullet Content:**
   * **Frontend (React/TS):** Handles user interactions, local inputs, and wallet signatures.
   * **BillRegistry Contract:** Registers hashed commitments and maps bills to stealth addresses.
   * **StealthPay Contract:** Uses deterministic derivation to generate and verify one-time claim endpoints.
   * **Notifier Contract:** Alerts participants once bills are settled without exposing transaction history.
 * **Speaker Notes:**
-  > "Under the hood, VeilSplit's frontend communicates with two core Soroban smart contracts on the Stellar Testnet: BillRegistry and StealthPay. When a bill is created, the BillRegistry contract registers the hashed commitment and calls StealthPay to generate unique claim endpoints. Once the payment is verified at the stealth address, the registry status is updated to paid, notifying the sender without leaking any linkable addresses on the ledger."
+  > "Under the hood, AetherSplit's frontend communicates with two core Soroban smart contracts on the Stellar Testnet: BillRegistry and StealthPay. When a bill is created, the BillRegistry contract registers the hashed commitment and calls StealthPay to generate unique claim endpoints. Once the payment is verified at the stealth address, the registry status is updated to paid, notifying the sender without leaking any linkable addresses on the ledger."
 
 ---
 
@@ -120,4 +120,4 @@ This document contains the complete content, slide layouts, and speaker notes fo
   * **Learn More:** [aether-splits-level5-9gcx.vercel.app](https://aether-splits-level5-9gcx.vercel.app/)
   * **Contact:** `[YOUR EMAIL / SOCIAL LINK]`
 * **Speaker Notes:**
-  > "VeilSplit is built to bring real-world utility and privacy to daily Web3 social payments. I am currently seeking feedback from the community, developers, and partners to refine our smart contracts and integration points. Thank you for your time, and please visit the live demo and dashboard on the Stellar Testnet!"
+  > "AetherSplit is built to bring real-world utility and privacy to daily Web3 social payments. I am currently seeking feedback from the community, developers, and partners to refine our smart contracts and integration points. Thank you for your time, and please visit the live demo and dashboard on the Stellar Testnet!"
