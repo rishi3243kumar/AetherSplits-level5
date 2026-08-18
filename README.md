@@ -199,3 +199,16 @@ AetherSplit/
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Developer & Contact
+
+**Developed by [@rishi3243kumar](https://github.com/rishi3243kumar)**
+
+For any queries, feedback, or collaboration opportunities, feel free to reach out or open an issue on the repository!
+
+- 🐙 **GitHub Profile:** [github.com/rishi3243kumar](https://github.com/rishi3243kumar)
+- 📁 **Project Repository:** [AetherSplits-level5](https://github.com/rishi3243kumar/AetherSplits-level5)
+
+*"Building privacy-first applications on Stellar!"*
