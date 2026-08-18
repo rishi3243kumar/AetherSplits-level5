@@ -4,12 +4,12 @@ AetherSplit is a privacy-preserving recurring bill settlement protocol built on 
 
 ## Live Deployed Application & Level 5 Verification Links
 
-- 🚀 **Production URL:** [aether-split.vercel.app](https://aether-split.vercel.app/)
+- 🚀 **Production URL:** [aether-splits-level5-9gcx.vercel.app](https://aether-splits-level5-9gcx.vercel.app/)
 - 📹 **Demo Video (YouTube):** [Watch Demo Video](https://youtu.be/DfHIaewS0J0)
 - 📊 **Pitch Deck (PDF):** [docs/pitch_deck.pdf](https://github.com/rishi3243kumar/AetherSplit/blob/main/docs/pitch_deck.pdf)
 - 📊 **Verifiable On-Chain Proof (August Transactions):** [docs/real_user_proof.md](https://github.com/rishi3243kumar/AetherSplit/blob/main/docs/real_user_proof.md) *(Copy and verify transaction hashes directly on the Stellar Testnet ledger)*
 - 🔍 **Live Stellar Expert Ledger Proof:** [Verify Active Wallet Transactions on Stellar Expert](https://stellar.expert/explorer/testnet/account/GA7GBLNU4RKRH2DJQDLMDHFNQOTIWO2RNUP4ON7BQWP4Q47QLZ3UOKFM)
-- 📈 **Live Admin Dashboard:** [aether-split.vercel.app/#admin](https://aether-split.vercel.app/#admin) *(Shows live updating statistics powered by Soroban RPC polling)*
+- 📈 **Live Admin Dashboard:** [aether-splits-level5-9gcx.vercel.app/#admin](https://aether-splits-level5-9gcx.vercel.app/#admin) *(Shows live updating statistics powered by Soroban RPC polling)*
 
 ## Problem & Solution
 

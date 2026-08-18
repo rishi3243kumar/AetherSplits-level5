@@ -10,7 +10,7 @@ This document contains the complete content, slide layouts, and speaker notes fo
   * Built by `[YOUR NAME]`
   * Stellar Journey to Mastery — Level 5 Submission
   * Smart Contract Registry + Stealth Payouts
-  * Live Demo: [veil-splits2-0.vercel.app](https://veil-splits2-0.vercel.app/)
+  * Live Demo: [aether-splits-level5-9gcx.vercel.app](https://aether-splits-level5-9gcx.vercel.app/)
 * **Speaker Notes:**
   > "Hello everyone, my name is `[YOUR NAME]`, and today I am excited to present VeilSplit—a privacy-preserving, recurring bill settlement protocol built on Stellar. With VeilSplit, we are resolving a fundamental issue of public blockchain transparency for everyday social finance, making group expense splitting private, secure, and user-friendly on the Soroban network."
 
@@ -117,7 +117,7 @@ This document contains the complete content, slide layouts, and speaker notes fo
 * **Bullet Content:**
   * **Founder:** `[YOUR NAME]` — Passionate developer in the Stellar ecosystem.
   * **The Ask:** Open feedback from developers, and potential pilot partners for DAO/freelancer collectives.
-  * **Learn More:** [veil-splits2-0.vercel.app](https://veil-splits2-0.vercel.app/)
+  * **Learn More:** [aether-splits-level5-9gcx.vercel.app](https://aether-splits-level5-9gcx.vercel.app/)
   * **Contact:** `[YOUR EMAIL / SOCIAL LINK]`
 * **Speaker Notes:**
   > "VeilSplit is built to bring real-world utility and privacy to daily Web3 social payments. I am currently seeking feedback from the community, developers, and partners to refine our smart contracts and integration points. Thank you for your time, and please visit the live demo and dashboard on the Stellar Testnet!"
