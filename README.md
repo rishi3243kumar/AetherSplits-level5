@@ -100,6 +100,11 @@ We collect feedback from active testers via Google Forms.
 | USR-03 | Sanjay Singh | `sanjaysingh2408@gmail.com` | `GBYFSZ6V4ZWMGJBOPXKBME7LYDL7YE3ERYHYV72VMX7FD5XI3SGHWWE7` | Transaction settlement speed is impressive for testnet. |
 | USR-04 | Pooja Gupta | `poojagupta7766@gmail.com` | `GAVED5OTBES3WJKZ32YV3JBEFZCEIS3BX6VWMFZ3H77JPDPM3ZXD64Y4` | Simple onboarding flow and direct wallet connection. |
 | USR-05 | Deepak Yadav | `deepakyadav123@gmail.com` | `GBWLYEKEZF3ADIKNKSOC37IDK6PWC442EHNQTHOF573MZ6WO5W2WFWWL` | Decoupling recipient identities is a game-changer for shared expenses. |
+| USR-06 | Ritu Tiwari | `ritutiwari007@gmail.com` | `GB2Z7OSJV4PLN32H5SMA7HMYOYLDE3VJNRQUTEG4DCV7HC23WH4SMQHE` | Loved the stealth address feature. It makes transaction history private. |
+| USR-07 | Sandeep Kumar | `sandeepkumar9091@gmail.com` | `GBFRAPBJRNHLPMDABIWQYSNRX6SWF7EQM26AIB5K4BIWTQHEM242XM3U` | The Midnight Indigo & Electric Violet design looks very premium. |
+| USR-08 | Meena Mishra | `meenamishra1992@gmail.com` | `GCMCAV3PVPT5EJYHOCXZPYXOQDTLNLUIIBLBT3I3NF2UCEFE2BCIY4WD` | Transaction settlement speed is impressive for testnet. |
+| USR-09 | Rajiv Chauhan | `rajivchauhan4321@gmail.com` | `GBOXFAARHZSJT7XRTWYA4ACBB3U2FLBX55O2LDZQ6VJEH5G4UOJ7J62I` | Simple onboarding flow and direct wallet connection. |
+| USR-10 | Poonam Jain | `poonamjain8765@gmail.com` | `GAMNF6LXRRRI6FWTCSZBWBU3J354IKVNQN7FKFTRQMU6TVWWBPUJALM7` | Decoupling recipient identities is a game-changer for shared expenses. |
 
 ### Feedback Implementation
 
@@ -110,6 +115,11 @@ We collect feedback from active testers via Google Forms.
 | USR-03 | Sanjay Singh | `sanjaysingh2408@gmail.com` | `GBYFSZ6V4ZWMGJBOPXKBME7LYDL7YE3ERYHYV72VMX7FD5XI3SGHWWE7` | Transaction settlement speed is impressive for testnet. | Added real-time transaction progress bar for better UX | `ba92770` |
 | USR-04 | Pooja Gupta | `poojagupta7766@gmail.com` | `GAVED5OTBES3WJKZ32YV3JBEFZCEIS3BX6VWMFZ3H77JPDPM3ZXD64Y4` | Simple onboarding flow and direct wallet connection. | Streamlined single-screen Freighter connect login flow | `ba92770` |
 | USR-05 | Deepak Yadav | `deepakyadav123@gmail.com` | `GBWLYEKEZF3ADIKNKSOC37IDK6PWC442EHNQTHOF573MZ6WO5W2WFWWL` | Decoupling recipient identities is a game-changer for shared expenses. | Added input validation and automatic check for stealth fields | `ba92770` |
+| USR-06 | Ritu Tiwari | `ritutiwari007@gmail.com` | `GB2Z7OSJV4PLN32H5SMA7HMYOYLDE3VJNRQUTEG4DCV7HC23WH4SMQHE` | Loved the stealth address feature. It makes transaction history private. | Refactored activity feed logs and transaction search features | `8e5b7e8` |
+| USR-07 | Sandeep Kumar | `sandeepkumar9091@gmail.com` | `GBFRAPBJRNHLPMDABIWQYSNRX6SWF7EQM26AIB5K4BIWTQHEM242XM3U` | The Midnight Indigo & Electric Violet design looks very premium. | Migrated app to dark gold theme with warm-gold borders | `8e5b7e8` |
+| USR-08 | Meena Mishra | `meenamishra1992@gmail.com` | `GCMCAV3PVPT5EJYHOCXZPYXOQDTLNLUIIBLBT3I3NF2UCEFE2BCIY4WD` | Transaction settlement speed is impressive for testnet. | Deduplicated and cleaned up standard splitting components | `8e5b7e8` |
+| USR-09 | Rajiv Chauhan | `rajivchauhan4321@gmail.com` | `GBOXFAARHZSJT7XRTWYA4ACBB3U2FLBX55O2LDZQ6VJEH5G4UOJ7J62I` | Simple onboarding flow and direct wallet connection. | Refactored balance dashboard with new ink-gold palette | `8e5b7e8` |
+| USR-10 | Poonam Jain | `poonamjain8765@gmail.com` | `GAMNF6LXRRRI6FWTCSZBWBU3J354IKVNQN7FKFTRQMU6TVWWBPUJALM7` | Decoupling recipient identities is a game-changer for shared expenses. | Added live stream indicators for event stream logging | `8e5b7e8` |
 
 ## Product Improvements This Level
 
