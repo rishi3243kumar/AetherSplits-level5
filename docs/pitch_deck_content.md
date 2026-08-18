@@ -7,12 +7,12 @@ This document contains the complete content, slide layouts, and speaker notes fo
 * **Slide Title:** AetherSplit
 * **Subtitle:** Privacy-First Bill Splitting on Stellar
 * **Bullet Content:**
-  * Built by `[YOUR NAME]`
+  * Built by Rishi Kumar
   * Stellar Journey to Mastery — Level 5 Submission
   * Smart Contract Registry + Stealth Payouts
   * Live Demo: [aether-splits-level5-9gcx.vercel.app](https://aether-splits-level5-9gcx.vercel.app/)
 * **Speaker Notes:**
-  > "Hello everyone, my name is `[YOUR NAME]`, and today I am excited to present AetherSplit—a privacy-preserving, recurring bill settlement protocol built on Stellar. With AetherSplit, we are resolving a fundamental issue of public blockchain transparency for everyday social finance, making group expense splitting private, secure, and user-friendly on the Soroban network."
+  > "Hello everyone, my name is Rishi Kumar, and today I am excited to present AetherSplit—a privacy-preserving, recurring bill settlement protocol built on Stellar. With AetherSplit, we are resolving a fundamental issue of public blockchain transparency for everyday social finance, making group expense splitting private, secure, and user-friendly on the Soroban network."
 
 ---
 
@@ -115,9 +115,9 @@ This document contains the complete content, slide layouts, and speaker notes fo
 ## Slide 10: Closing & Ask
 * **Slide Title:** Join the Financial Privacy Movement
 * **Bullet Content:**
-  * **Founder:** `[YOUR NAME]` — Passionate developer in the Stellar ecosystem.
+  * **Founder:** Rishi Kumar — Passionate developer in the Stellar ecosystem.
   * **The Ask:** Open feedback from developers, and potential pilot partners for DAO/freelancer collectives.
   * **Learn More:** [aether-splits-level5-9gcx.vercel.app](https://aether-splits-level5-9gcx.vercel.app/)
-  * **Contact:** `[YOUR EMAIL / SOCIAL LINK]`
+  * **Contact:** rishigshshshsh@gmail.com
 * **Speaker Notes:**
   > "AetherSplit is built to bring real-world utility and privacy to daily Web3 social payments. I am currently seeking feedback from the community, developers, and partners to refine our smart contracts and integration points. Thank you for your time, and please visit the live demo and dashboard on the Stellar Testnet!"
