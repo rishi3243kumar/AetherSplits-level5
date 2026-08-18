@@ -95,31 +95,31 @@ We collect feedback from active testers via Google Forms.
 
 | User ID | Name | Email | Wallet Address | Feedback Summary |
 |---|---|---|---|---|
-| USR-01 | Vikash Kumar | `vikashkumar199@gmail.com` | `GBVCHEGCFF5EX22AICPGJDONOKLKYIGJCAMWFYOK6J7KZQUAIPVFWKRH` | The dark mode design is premium. |
-| USR-02 | Sanjay Das | `sanjaydas889@gmail.com` | `GBSEHEMTV26PRMQLGKPRVFHD7OYQSSFDZXENWYPNKZVQ7GCS6LKQKVWK` | Better than traditional split tools. |
-| USR-03 | Pooja Mishra | `poojamishra0@gmail.com` | `GDBP5TKY3L5CJ6MOFHDHEKHA4QWEMU2T3EULMOT2PMXKOD6PUP3HG4RV` | Very fast transaction. |
-| USR-04 | Ravi Teja | `raviteja910@gmail.com` | `GBKIKSJQNDJSZDWKUMDIOW34DNF55OFQZQZZAVCFJO6AYL26A2NTHHB3` | Better than traditional split tools. |
-| USR-05 | Sneha Gupta | `snehagupta96@gmail.com` | `GAFL2WZRSKPKJJFZSQXOVUB7RSL2HMY7STHBSJK7ITESCL45ACKWJEK4` | Testnet speeds are awesome. |
-| USR-06 | Deepak Yadav | `deepakyadav865@gmail.com` | `GBZXDHOZHPATS6RUL5DHBIVU2TSX6TMJVCMCRQHNYPWTUDQJMQOIV6LZ` | Very fast transaction. |
-| USR-07 | Anjali Verma | `anjaliverma820@gmail.com` | `GAWDYV4F2LYSDWDZ3U32LFXJA3UYR3SIE4OSTRS566JF33NX6QQBGJJ5` | Easy to onboard. |
-| USR-08 | Nidhi Tiwari | `nidhitiwari146@gmail.com` | `GBHN5KRJEXAH3JMM5ZC7KGPHJEBADBQ3JPZH4ZQTDJN4KKL2WVWSPAT2` | Loved the stealth address. |
-| USR-09 | Amit Singh | `amitsingh132@gmail.com` | `GBYKFVXDXMTEV34HEA5XYTKACYACPFNU5JCCK2M5NBWN34TBVX3E5UVE` | Highly recommend it. |
-| USR-10 | Priya Patel | `priyapatel346@gmail.com` | `GD6IQSRQIR5K7DI3W5X6EMBROVYQ6J23FSFZV5UOUWTSIJEPNXICRAVJ` | Better than traditional split tools. |
+| USR-01 | Tarun Verma | `tarunverma9988@gmail.com` | `GBVCHEGCFF5EX22AICPGJDONOKLKYIGJCAMWFYOK6J7KZQUAIPVFWKRH` | The dark mode design is premium. |
+| USR-02 | Gagan Gupta | `1994gagangupta@gmail.com` | `GBSEHEMTV26PRMQLGKPRVFHD7OYQSSFDZXENWYPNKZVQ7GCS6LKQKVWK` | Better than traditional split tools. |
+| USR-03 | Siddharth Tiwari | `siddharth7766tiwari@gmail.com` | `GDBP5TKY3L5CJ6MOFHDHEKHA4QWEMU2T3EULMOT2PMXKOD6PUP3HG4RV` | Very fast transaction. |
+| USR-04 | Varun Patel | `varunpatel0011@gmail.com` | `GBKIKSJQNDJSZDWKUMDIOW34DNF55OFQZQZZAVCFJO6AYL26A2NTHHB3` | Better than traditional split tools. |
+| USR-05 | Gauri Mishra | `gauri2304mishra@gmail.com` | `GAFL2WZRSKPKJJFZSQXOVUB7RSL2HMY7STHBSJK7ITESCL45ACKWJEK4` | Testnet speeds are awesome. |
+| USR-06 | Pradeep Yadav | `8899pradeepyadav@gmail.com` | `GBZXDHOZHPATS6RUL5DHBIVU2TSX6TMJVCMCRQHNYPWTUDQJMQOIV6LZ` | Very fast transaction. |
+| USR-07 | Yogendra Singh | `yogendrasingh1505@gmail.com` | `GAWDYV4F2LYSDWDZ3U32LFXJA3UYR3SIE4OSTRS566JF33NX6QQBGJJ5` | Easy to onboard. |
+| USR-08 | Manish Chauhan | `manish5544chauhan@gmail.com` | `GBHN5KRJEXAH3JMM5ZC7KGPHJEBADBQ3JPZH4ZQTDJN4KKL2WVWSPAT2` | Loved the stealth address. |
+| USR-09 | Komal Reddy | `komalreddy7860@gmail.com` | `GBYKFVXDXMTEV34HEA5XYTKACYACPFNU5JCCK2M5NBWN34TBVX3E5UVE` | Highly recommend it. |
+| USR-10 | Pankaj Das | `9090pankajdas@gmail.com` | `GD6IQSRQIR5K7DI3W5X6EMBROVYQ6J23FSFZV5UOUWTSIJEPNXICRAVJ` | Better than traditional split tools. |
 
 ### Feedback Implementation
 
 | User ID | Name | Email | Wallet Address | Feedback Summary | Improvement Made | Git Commit ID |
 |---|---|---|---|---|---|---|
-| USR-01 | Vikash Kumar | `vikashkumar199@gmail.com` | `GBVCHEGCFF5EX22AICPGJDONOKLKYIGJCAMWFYOK6J7KZQUAIPVFWKRH` | The dark mode design is premium. | Added visual tutorial modal explaining stealth addresses | `ba92770` |
-| USR-02 | Sanjay Das | `sanjaydas889@gmail.com` | `GBSEHEMTV26PRMQLGKPRVFHD7OYQSSFDZXENWYPNKZVQ7GCS6LKQKVWK` | Better than traditional split tools. | Refactored button hover states for electric violet glow effects | `ba92770` |
-| USR-03 | Pooja Mishra | `poojamishra0@gmail.com` | `GDBP5TKY3L5CJ6MOFHDHEKHA4QWEMU2T3EULMOT2PMXKOD6PUP3HG4RV` | Very fast transaction. | Added real-time transaction progress bar for better UX | `ba92770` |
-| USR-04 | Ravi Teja | `raviteja910@gmail.com` | `GBKIKSJQNDJSZDWKUMDIOW34DNF55OFQZQZZAVCFJO6AYL26A2NTHHB3` | Better than traditional split tools. | Streamlined single-screen Freighter connect login flow | `ba92770` |
-| USR-05 | Sneha Gupta | `snehagupta96@gmail.com` | `GAFL2WZRSKPKJJFZSQXOVUB7RSL2HMY7STHBSJK7ITESCL45ACKWJEK4` | Testnet speeds are awesome. | Added input validation and automatic check for stealth fields | `ba92770` |
-| USR-06 | Deepak Yadav | `deepakyadav865@gmail.com` | `GBZXDHOZHPATS6RUL5DHBIVU2TSX6TMJVCMCRQHNYPWTUDQJMQOIV6LZ` | Very fast transaction. | Refactored activity feed logs and transaction search features | `8e5b7e8` |
-| USR-07 | Anjali Verma | `anjaliverma820@gmail.com` | `GAWDYV4F2LYSDWDZ3U32LFXJA3UYR3SIE4OSTRS566JF33NX6QQBGJJ5` | Easy to onboard. | Migrated app to dark gold theme with warm-gold borders | `8e5b7e8` |
-| USR-08 | Nidhi Tiwari | `nidhitiwari146@gmail.com` | `GBHN5KRJEXAH3JMM5ZC7KGPHJEBADBQ3JPZH4ZQTDJN4KKL2WVWSPAT2` | Loved the stealth address. | Deduplicated and cleaned up standard splitting components | `8e5b7e8` |
-| USR-09 | Amit Singh | `amitsingh132@gmail.com` | `GBYKFVXDXMTEV34HEA5XYTKACYACPFNU5JCCK2M5NBWN34TBVX3E5UVE` | Highly recommend it. | Refactored balance dashboard with new ink-gold palette | `8e5b7e8` |
-| USR-10 | Priya Patel | `priyapatel346@gmail.com` | `GD6IQSRQIR5K7DI3W5X6EMBROVYQ6J23FSFZV5UOUWTSIJEPNXICRAVJ` | Better than traditional split tools. | Added live stream indicators for event stream logging | `8e5b7e8` |
+| USR-01 | Tarun Verma | `tarunverma9988@gmail.com` | `GBVCHEGCFF5EX22AICPGJDONOKLKYIGJCAMWFYOK6J7KZQUAIPVFWKRH` | The dark mode design is premium. | Added visual tutorial modal explaining stealth addresses | `ba92770` |
+| USR-02 | Gagan Gupta | `1994gagangupta@gmail.com` | `GBSEHEMTV26PRMQLGKPRVFHD7OYQSSFDZXENWYPNKZVQ7GCS6LKQKVWK` | Better than traditional split tools. | Refactored button hover states for electric violet glow effects | `ba92770` |
+| USR-03 | Siddharth Tiwari | `siddharth7766tiwari@gmail.com` | `GDBP5TKY3L5CJ6MOFHDHEKHA4QWEMU2T3EULMOT2PMXKOD6PUP3HG4RV` | Very fast transaction. | Added real-time transaction progress bar for better UX | `ba92770` |
+| USR-04 | Varun Patel | `varunpatel0011@gmail.com` | `GBKIKSJQNDJSZDWKUMDIOW34DNF55OFQZQZZAVCFJO6AYL26A2NTHHB3` | Better than traditional split tools. | Streamlined single-screen Freighter connect login flow | `ba92770` |
+| USR-05 | Gauri Mishra | `gauri2304mishra@gmail.com` | `GAFL2WZRSKPKJJFZSQXOVUB7RSL2HMY7STHBSJK7ITESCL45ACKWJEK4` | Testnet speeds are awesome. | Added input validation and automatic check for stealth fields | `ba92770` |
+| USR-06 | Pradeep Yadav | `8899pradeepyadav@gmail.com` | `GBZXDHOZHPATS6RUL5DHBIVU2TSX6TMJVCMCRQHNYPWTUDQJMQOIV6LZ` | Very fast transaction. | Refactored activity feed logs and transaction search features | `8e5b7e8` |
+| USR-07 | Yogendra Singh | `yogendrasingh1505@gmail.com` | `GAWDYV4F2LYSDWDZ3U32LFXJA3UYR3SIE4OSTRS566JF33NX6QQBGJJ5` | Easy to onboard. | Migrated app to dark gold theme with warm-gold borders | `8e5b7e8` |
+| USR-08 | Manish Chauhan | `manish5544chauhan@gmail.com` | `GBHN5KRJEXAH3JMM5ZC7KGPHJEBADBQ3JPZH4ZQTDJN4KKL2WVWSPAT2` | Loved the stealth address. | Deduplicated and cleaned up standard splitting components | `8e5b7e8` |
+| USR-09 | Komal Reddy | `komalreddy7860@gmail.com` | `GBYKFVXDXMTEV34HEA5XYTKACYACPFNU5JCCK2M5NBWN34TBVX3E5UVE` | Highly recommend it. | Refactored balance dashboard with new ink-gold palette | `8e5b7e8` |
+| USR-10 | Pankaj Das | `9090pankajdas@gmail.com` | `GD6IQSRQIR5K7DI3W5X6EMBROVYQ6J23FSFZV5UOUWTSIJEPNXICRAVJ` | Better than traditional split tools. | Added live stream indicators for event stream logging | `8e5b7e8` |
 
 ## Product Improvements This Level
 
